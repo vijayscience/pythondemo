@@ -58,7 +58,7 @@ print(add_15(10))
 
 # Python code to illustrate
 # Decorators basic in Python
-def decorator_fun(func):
+def decorator_fun1(func):
 	print("Inside decorator")
 	def inner(*args,**kwargs):
 		print("Inside inner function")
@@ -66,7 +66,7 @@ def decorator_fun(func):
 		# do operations with func
 		func()
 	return inner()
-@decorator_fun
+@decorator_fun1
 def func_to():
 	print("Inside actual function")
 func_to
@@ -90,5 +90,5 @@ def inner(*args, **kwargs):
 
 
 # another way of using decorators
-decorator_fun(func_to)() 
+decorator_fun(func_to)
 
