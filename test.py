@@ -56,8 +56,6 @@ add_15 = create_adder(15)
 
 print(add_15(10)) 
 
-
-<<<<<<< HEAD
 # Python code to illustrate
 # Decorators basic in Python
 def decorator_fun(func):
@@ -74,7 +72,6 @@ def func_to():
 func_to
 
 
-=======
 # Python code to illustrate 
 # Decorators with parameters in Python 
 
@@ -94,5 +91,4 @@ def inner(*args, **kwargs):
 
 # another way of using decorators
 decorator_fun(func_to)() 
->>>>>>> 608889c (changes)
 
