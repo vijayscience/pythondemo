@@ -7,8 +7,7 @@ while temp > 0:
     reverse = (reverse * 10) + remainder
     temp = temp // 10
 if num == reverse:
-  print('Palindrome')
+    print('Palindrome')
 else:
-  print("Not Palindrome")
+    print("Not Palindrome")
 # Output: Palindrome
-  
