@@ -89,7 +89,6 @@ def func_to():
 
 func_to
 
-
 # Python code to illustrate 
 # Decorators with parameters in Python 
 

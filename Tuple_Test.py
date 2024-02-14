@@ -4,6 +4,9 @@ print(thisTuple)
 print(thisTuple.index('cherry'))
 print(thisTuple.count('cherry'))
 
+for i in thisTuple:
+    print(i.upper())
+
 # Set Items
 
 thisSet = {"apple", "banana", "cherry", "apple"}
@@ -13,11 +16,11 @@ thisSet.update(["Hello" + str(i) for i in range(4)])
 print(thisSet)
 
 thisDict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year1": 1964,
-  "year": 2020,
-  "fruits":["apple", "banana", "cherry", "apple"]
+    "brand": "Ford",
+    "model": "Mustang",
+    "year1": 1964,
+    "year": 2020,
+    "fruits": ["apple", "banana", "cherry", "apple"]
 }
 print(thisDict)
 print(thisDict.__len__())
