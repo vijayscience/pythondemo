@@ -2,8 +2,12 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
 spark = SparkSession.builder.master('local[*]').appName('Spark1').getOrCreate()
+spark.sparkContext.setLogLevel("ERROR")
+
 df = spark.read.csv('employees.csv', header=True, inferSchema=True, sep=',')
+df.createOrReplaceTempView('employeeTemp')
 df.show(5)
+
 # df.printSchema()
 
 # df.filter(col('SALARY') > 9000).groupby('MANAGER_ID').agg(count('DEPARTMENT_ID')).show()
